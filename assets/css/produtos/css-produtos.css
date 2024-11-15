@@ -89,6 +89,7 @@ main {
     color: var(--color-category-title);
     margin: 0;
     margin-bottom: 2rem;
+    margin-top: 4rem;
 }
 
 /* Cards de Produtos */
@@ -167,7 +168,8 @@ main {
     font-weight: bold;
     line-height: 130%;
     margin: 0 0 1rem 0;
-    max-width: 11.25rem;
+    max-width: 13rem;
+    min-height: 4.875rem;
 }
 
 .card-produto h1 {

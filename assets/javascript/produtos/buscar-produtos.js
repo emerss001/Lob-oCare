@@ -1,19 +1,20 @@
 const url = "http://localhost:3636/products";
-console.log("object");
+
 async function buscarProdutos() {
-    console.log("object");
     try {
         const response = await fetch(url);
         const data = await response.json();
 
-        renderizarProdutos(data.cachorro);
+        renderizarProdutos(data);
     } catch (error) {
         console.error(error);
     }
 }
 
 function renderizarProdutos(produtos) {
-    const containerProdutos = document.querySelector(".carrossel");
+    const containerProdutosCachorro = document.querySelector("#cachorro");
+    const containerProdutosGato = document.querySelector("#gato");
+    const containerProdutosFarmacia = document.querySelector("#farmacia");
 
     produtos.forEach((element) => {
         const cardProduto = document.createElement("div");
@@ -70,7 +71,9 @@ function renderizarProdutos(produtos) {
             <div class="comprar"><button>Comprar</button></div>
     `;
 
-        containerProdutos.appendChild(cardProduto);
+        if (element.categoriaID === 1) containerProdutosCachorro.appendChild(cardProduto);
+        if (element.categoriaID === 2) containerProdutosGato.appendChild(cardProduto);
+        if (element.categoriaID === 3) containerProdutosFarmacia.appendChild(cardProduto);
     });
 }
 

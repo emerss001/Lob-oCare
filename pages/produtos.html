@@ -81,13 +81,41 @@
             <h1 class="titulo-categoria">Tudo para seu doguinho 🐶</h1>
             <!-- Produtos para cachorros -->
             <div class="container-produtos">
-                <div class="anterior anterior-proximo" onclick="scrollAnterior()">
+                <div class="anterior anterior-proximo" onclick="scrollAnterior(this)">
                     <img src="../assets/icons/produtos/chevron-left.svg" alt="" />
                 </div>
-                <div class="carrossel">
+                <div class="carrossel" id="cachorro">
                     <!-- Os cards são inseridos aqui pelo backend -->
                 </div>
-                <div class="proximo anterior-proximo" onclick="scrollProximo()">
+                <div class="proximo anterior-proximo" onclick="scrollProximo(this)">
+                    <img src="../assets/icons/produtos/chevron-right.svg" alt="" />
+                </div>
+            </div>
+
+            <h1 class="titulo-categoria">Tudo para seu gatinho 🐈</h1>
+            <!-- Produtos para gatos -->
+            <div class="container-produtos">
+                <div class="anterior anterior-proximo" onclick="scrollAnterior(this)">
+                    <img src="../assets/icons/produtos/chevron-left.svg" alt="" />
+                </div>
+                <div class="carrossel" id="gato">
+                    <!-- Os cards são inseridos aqui pelo backend -->
+                </div>
+                <div class="proximo anterior-proximo" onclick="scrollProximo(this)">
+                    <img src="../assets/icons/produtos/chevron-right.svg" alt="" />
+                </div>
+            </div>
+
+            <h1 class="titulo-categoria">Todo cuidado para seu pet 💊</h1>
+            <!-- Produtos para gatos -->
+            <div class="container-produtos">
+                <div class="anterior anterior-proximo" onclick="scrollAnterior(this)">
+                    <img src="../assets/icons/produtos/chevron-left.svg" alt="" />
+                </div>
+                <div class="carrossel" id="farmacia">
+                    <!-- Os cards são inseridos aqui pelo backend -->
+                </div>
+                <div class="proximo anterior-proximo" onclick="scrollProximo(this)">
                     <img src="../assets/icons/produtos/chevron-right.svg" alt="" />
                 </div>
             </div>
