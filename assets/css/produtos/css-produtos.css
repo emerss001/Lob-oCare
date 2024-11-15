@@ -4,6 +4,7 @@
     --circulo-icon: #e5e5e5;
     --color-category-title: #212529;
     --green-color: #84ae61;
+    --lef-and-next-button-background: #d9d9d9;
 }
 
 @font-face {
@@ -93,13 +94,54 @@ main {
 /* Cards de Produtos */
 .container-produtos {
     display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.container-produtos .carrossel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 100%;
     gap: 1.8rem;
-    flex-wrap: wrap;
+}
+
+.container-produtos .carrossel::-webkit-scrollbar {
+    display: none;
+}
+
+.container-produtos .anterior-proximo {
+    min-width: 3.8rem;
+    height: 3.8rem;
+    border-radius: 100%;
+    background-color: var(--lef-and-next-button-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.container-produtos .anterior {
+    left: 0;
+    margin-right: 0.5rem;
+}
+
+.container-produtos .proximo {
+    right: 0;
+    margin-left: 0.5rem;
+}
+
+.container-produtos .anterior-proximo:hover {
+    background-color: #c2c2c2;
+    transition: background-color 0.3s;
 }
 
 .card-produto {
     display: flex;
     flex-direction: column;
+    flex: 0 0 auto;
     width: 13.4rem;
     padding: 1.4rem 0.8rem 1.4rem 0.8rem;
     background-color: var(--background-color-secondary);
