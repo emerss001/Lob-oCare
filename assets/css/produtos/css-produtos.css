@@ -20,7 +20,7 @@ body {
 }
 
 main {
-    padding: 0 6.25rem 0 6.25rem;
+    padding: 0 5% 0 5%;
 }
 
 /* Cards de Vanatages */
@@ -220,4 +220,34 @@ main {
 .card-produto button:hover {
     background-color: #6e9d4f;
     transition: background-color 0.3s;
+}
+
+@media screen and (min-width: 320px) and (max-width: 715px) {
+    .titulo-categoria {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .container-produtos .anterior-proximo {
+        display: none;
+    }
+
+    .card-produto {
+        width: 10rem;
+    }
+
+    .card-produto img {
+        width: 7.75rem;
+        height: 11rem;
+    }
+
+    .card-produto p {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    main {
+        padding: 0 10% 0 10%;
+    }
 }
