@@ -2,6 +2,8 @@
     --background-color: #f7f9f9;
     --background-color-secondary: #ffffff;
     --circulo-icon: #e5e5e5;
+    --color-category-title: #212529;
+    --green-color: #84ae61;
 }
 
 @font-face {
@@ -17,6 +19,11 @@ body {
 }
 
 main {
+    padding: 0 6.25rem 0 6.25rem;
+}
+
+/* Cards de Vanatages */
+.scroll-cards {
     display: flex;
     justify-content: center;
 }
@@ -27,7 +34,7 @@ main {
     overflow: auto;
 
     /* TODO: Mudar espaçamento depois de colocar a navbar */
-    margin: 50px 20px 0 20px;
+    margin: 50px 0 50px 0;
 }
 
 .container::-webkit-scrollbar {
@@ -72,4 +79,86 @@ main {
     line-height: 0.9rem;
     color: #333333;
     margin: 0;
+}
+
+/* Título Das Categorias de Produtos  */
+.titulo-categoria {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--color-category-title);
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+/* Cards de Produtos */
+.container-produtos {
+    display: flex;
+    gap: 1.8rem;
+    flex-wrap: wrap;
+}
+
+.card-produto {
+    display: flex;
+    flex-direction: column;
+    width: 13.4rem;
+    padding: 1.4rem 0.8rem 1.4rem 0.8rem;
+    background-color: var(--background-color-secondary);
+    border-radius: 10px;
+}
+
+.card-produto img {
+    width: 8.75rem;
+    height: 12rem;
+    display: flex;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+}
+
+.card-produto div:first-child,
+.comprar {
+    display: flex;
+    justify-content: center;
+}
+
+.card-produto p {
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 130%;
+    margin: 0 0 1rem 0;
+    max-width: 11.25rem;
+}
+
+.card-produto h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card-produto .avaliacao {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.card-produto .avaliacao span {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.card-produto button {
+    width: 100%;
+    height: 3.5rem;
+    border-radius: 1rem;
+    background-color: var(--green-color);
+    color: var(--background-color-secondary);
+    border: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+.card-produto button:hover {
+    background-color: #6e9d4f;
+    transition: background-color 0.3s;
 }
