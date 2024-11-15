@@ -71,6 +71,12 @@ function renderizarProdutos(produtos) {
             <div class="comprar"><button>Comprar</button></div>
     `;
 
+        var elementos = document.getElementsByClassName("carregando");
+
+        for (var i = 0; i < elementos.length; i++) {
+            elementos[i].style.display = "none";
+        }
+
         if (element.categoriaID === 1) containerProdutosCachorro.appendChild(cardProduto);
         if (element.categoriaID === 2) containerProdutosGato.appendChild(cardProduto);
         if (element.categoriaID === 3) containerProdutosFarmacia.appendChild(cardProduto);

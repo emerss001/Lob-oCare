@@ -112,6 +112,21 @@ main {
     display: none;
 }
 
+.container-produtos .carrossel .carregando {
+    width: 3.8rem;
+    margin: auto;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .container-produtos .anterior-proximo {
     min-width: 3.8rem;
     height: 3.8rem;
