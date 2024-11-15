@@ -10,18 +10,32 @@
 }
 
 body {
-    margin: 50px;
+    margin: 0;
     padding: 0;
     font-family: "DMSans", sans-serif;
     background-color: var(--background-color);
 }
 
+main {
+    display: flex;
+    justify-content: center;
+}
+
 .container {
     display: flex;
+    gap: 1.8rem;
+    overflow: auto;
+
+    /* TODO: Mudar espaçamento depois de colocar a navbar */
+    margin: 50px 20px 0 20px;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
 }
 
 .card-vantagens {
-    width: 11rem;
+    min-width: 11rem;
     height: 3.5rem;
     display: flex;
     align-items: center;
@@ -43,7 +57,7 @@ body {
 }
 
 .card-vantagens .texto-card {
-    max-width: 6.5rem;
+    max-width: 6.6rem;
 }
 
 .card-vantagens .texto-card h3 {
