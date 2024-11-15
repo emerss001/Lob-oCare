@@ -1,5 +1,7 @@
 :root {
     --background-color: #f7f9f9;
+    --background-color-secondary: #ffffff;
+    --circulo-icon: #e5e5e5;
 }
 
 @font-face {
@@ -8,8 +10,52 @@
 }
 
 body {
-    margin: 0;
+    margin: 50px;
     padding: 0;
     font-family: "DMSans", sans-serif;
     background-color: var(--background-color);
+}
+
+.container {
+    display: flex;
+}
+
+.card-vantagens {
+    width: 11rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1rem 0.75rem;
+    background-color: var(--background-color-secondary);
+    border-radius: 1rem;
+}
+
+.card-vantagens .circo-icone {
+    border-radius: 100%;
+    width: 3.3rem;
+    height: 3.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--circulo-icon);
+}
+
+.card-vantagens .texto-card {
+    max-width: 6.5rem;
+}
+
+.card-vantagens .texto-card h3 {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 0 0 4px 0;
+}
+
+.card-vantagens .texto-card p {
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 0.9rem;
+    color: #333333;
+    margin: 0;
 }
