@@ -1,4 +1,4 @@
-const url = "http://localhost:3636/products";
+const url = "https://lobao-care-backend.onrender.com/products";
 
 async function buscarProdutos() {
     try {
