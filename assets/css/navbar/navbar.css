@@ -47,6 +47,11 @@ header {
     text-decoration: none;
 }
 
+.right-navbar-items a:hover {
+    color: #ffc421;
+    text-decoration: none;
+}
+
 #schedule-button {
     font-size: 14px;
     border: solid white 1px;
@@ -56,6 +61,7 @@ header {
 
 #schedule-button:hover {
     background-color: #9dbb85;
+    color: #fff8e4;
 }
 
 .hamburger {
@@ -142,6 +148,20 @@ header {
 
     .hamburger {
         display: flex;
+    }
+}
+
+@media (max-width: 400px){
+    #schedule-button {
+        color: transparent;
+        font-size: 16px;
+        padding-right: 20vw;
+    }
+    
+    #schedule-button::after {
+        content: "Agendar";
+        color: white;
+        font-size: 16px;
     }
 }
 
