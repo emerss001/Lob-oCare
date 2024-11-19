@@ -34,8 +34,7 @@ main {
     gap: 1.8rem;
     overflow: auto;
 
-    /* TODO: Mudar espaçamento depois de colocar a navbar */
-    margin: 50px 0 50px 0;
+    margin: 3rem 0 3rem 0;
 }
 
 .container::-webkit-scrollbar {
@@ -89,7 +88,7 @@ main {
     color: var(--color-category-title);
     margin: 0;
     margin-bottom: 2rem;
-    margin-top: 4rem;
+    margin-left: 1rem;
 }
 
 /* Cards de Produtos */
@@ -106,6 +105,7 @@ main {
     scroll-behavior: smooth;
     width: 100%;
     gap: 1.8rem;
+    margin-bottom: 3rem;
 }
 
 .container-produtos .carrossel::-webkit-scrollbar {

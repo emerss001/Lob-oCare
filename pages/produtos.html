@@ -4,9 +4,60 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="../assets/css/produtos/css-produtos.css" />
+        <link rel="stylesheet" href="../assets/css/navbar/navbar.css" />
         <title>Lobão Care - Produtos</title>
     </head>
     <body>
+        <header>
+            <div class="left-navbar">
+                <a href="index.html" class="main-logo">
+                    <img src="../assets/icons/logo/lobo.png" class="logo" alt="Logo da LobãoCare" />
+                    <img src="../assets/icons/logo/Logo.svg" class="lobin" alt="LobãoCare" />
+                </a>
+            </div>
+
+            <div class="right-navbar">
+                <ul class="right-navbar-items">
+                    <li>
+                        <a href="../index.html" class="start-link">Início</a>
+                    </li>
+
+                    <li>
+                        <a href="./produtos.html" class="products-link">Produtos</a>
+                    </li>
+
+                    <li>
+                        <a href="./servicos.html" class="services-link">Serviços</a>
+                    </li>
+
+                    <li>
+                        <a href="feedbacks.html" class="feedbacks-link">Depoimentos</a>
+                    </li>
+
+                    <li>
+                        <a href="schedule.html" id="schedule-button">agendar consulta</a>
+                    </li>
+                </ul>
+
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <script>
+                function toggleMenu() {
+                    const menu = document.querySelector(".right-navbar-items");
+                    menu.classList.toggle("active");
+                }
+
+                document.querySelectorAll(".right-navbar-items a").forEach((link) => {
+                    if (link.href === window.location.href) {
+                        link.classList.add("active");
+                    }
+                });
+            </script>
+        </header>
         <main>
             <!-- Card de vantagens -->
             <div class="scroll-cards">
