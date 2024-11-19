@@ -1,7 +1,7 @@
 header {
     display: flex;
     justify-content: space-between;
-    background-color: #84AE61;
+    background-color: #84ae61;
     height: 92px;
     padding: 0 7vw;
     font-weight: bold;
@@ -84,7 +84,7 @@ header {
     background-color: white;
 }
 
-@media (max-width: 1300px){
+@media (max-width: 1300px) {
     header {
         display: flex;
         justify-content: space-between;
@@ -94,7 +94,7 @@ header {
         display: none;
     }
 
-    .start-link{
+    .start-link {
         display: none;
     }
 
@@ -103,23 +103,24 @@ header {
     }
 }
 
-@media (max-width: 1100px){
-    .products-link{
+@media (max-width: 1100px) {
+    .products-link {
         display: none;
     }
 
-    .services-link{
+    .services-link {
         display: none;
     }
 
-    #schedule-button{
+    #schedule-button {
         margin-right: 2px;
     }
 }
 
 @media (max-width: 724px) {
-
-    .products-link, .services-link, .feedbacks-link{
+    .products-link,
+    .services-link,
+    .feedbacks-link {
         display: flex;
     }
     .right-navbar-items {
@@ -128,7 +129,7 @@ header {
         right: 0;
         width: 50%;
         height: 0;
-        background-color: #84AE61;
+        background-color: #84ae61;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -139,8 +140,8 @@ header {
     .right-navbar-items.active {
         height: auto;
         padding: 0 0 60px 0;
+        z-index: 1;
     }
-
 
     .right-navbar-items li {
         padding: 20px 0;
@@ -155,13 +156,13 @@ header {
     }
 }
 
-@media (max-width: 400px){
+@media (max-width: 400px) {
     #schedule-button {
         color: transparent;
         font-size: 16px;
         padding-right: 20vw;
     }
-    
+
     #schedule-button::after {
         content: "Agendar";
         color: white;
@@ -169,8 +170,6 @@ header {
     }
 }
 
-
 .right-navbar-items {
     transition: all 0.2s linear;
 }
-
