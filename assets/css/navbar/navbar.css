@@ -52,6 +52,10 @@ header {
     text-decoration: none;
 }
 
+.right-navbar-items a.active {
+    border-bottom: 3px solid white;
+}
+
 #schedule-button {
     font-size: 14px;
     border: solid white 1px;

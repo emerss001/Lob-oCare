@@ -50,6 +50,12 @@
                 const menu = document.querySelector('.right-navbar-items');
                 menu.classList.toggle('active');
             }
+
+            document.querySelectorAll('.right-navbar-items a').forEach(link => {
+                if (link.href === window.location.href) {
+                link.classList.add('active');
+                }
+            });
         </script>
     </header>
 </body>
