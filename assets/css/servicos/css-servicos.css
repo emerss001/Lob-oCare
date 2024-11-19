@@ -1,0 +1,55 @@
+
+/*ESTILO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+body{
+    background-color: #f7f9f9;
+    height: 100vh;
+}
+
+/* ESTILO MAIN */
+
+.services-cards{
+    background-color: white;
+    border-radius: 8px;
+    border: solid 1px #dce9e2;
+    width: 347px;
+    height: 207px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.main-tittle{
+    font-size: 23px;
+    padding-left: 25%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    padding-right: 25%;
+    text-align: center;
+}
+
+.painel-cards{
+    padding-left: 8%;
+    padding-right: 8%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between; 
+
+}
+
+h2{
+    padding-top: 7px;
+    padding-bottom: 21px;
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+p{
+    font-size: 16px;
+    font-weight:normal;
+}
