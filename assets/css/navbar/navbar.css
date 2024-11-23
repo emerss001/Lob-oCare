@@ -21,7 +21,6 @@ header {
 }
 
 .logo {
-    /* width: 4.2vw; */
     width: clamp(40px, 4.2vw, 67px);
 }
 

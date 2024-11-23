@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/homepage/homepage.css">
     <link rel="stylesheet" href="assets/css/navbar/navbar.css">
+    <link rel="stylesheet" href="assets/css/footer/footer.css">
     <title>LobãoCare</title>
 </head>
 <body>
@@ -45,18 +46,63 @@
                 <div class="bar"></div>
             </div>
         </div>
-        <script>
-            function toggleMenu() {
-                const menu = document.querySelector('.right-navbar-items');
-                menu.classList.toggle('active');
-            }
 
-            document.querySelectorAll('.right-navbar-items a').forEach(link => {
-                if (link.href === window.location.href) {
-                link.classList.add('active');
-                }
-            });
-        </script>
+
+        
     </header>
+
+    <footer>
+        <div class="left-footer">
+            <div class="footer-logo">
+                <span class="logo-lobao">Lobão</span>
+                <span class="logo-care">Care</span>
+            </div>
+
+            <div class="copyright">
+                <span class="copy-date">
+                    ©2024 - LobãoCare.
+                </span>
+
+                <br>
+
+                <span class="reserved">
+                    Todos os direitos reservados.
+                </span>
+            </div>
+        </div>
+        <div class="right-footer">
+            <div class="whatsapp-logo">
+                <a href="n/a">
+                    <img src="assets/icons/footer/wpp.svg" class="wpp-icon" height="28px" alt="Logo do Whatsapp">
+                </a>
+            </div>
+
+            <div class="facebook-logo">
+                <a href="n/a">
+                    <img src="assets/icons/footer/fb.svg" class="fb-icon" alt="Logo do Facebook">
+                </a>
+            </div>
+
+            <div class="youtube-logo">
+                <a href="n/a">
+                    <img src="assets/icons/footer/yt.svg" class="yt-icon" alt="Logo do Youtube">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.right-navbar-items');
+            menu.classList.toggle('active');
+        }
+
+        document.querySelectorAll('.right-navbar-items a').forEach(link => {
+            if (link.href === window.location.href) {
+            link.classList.add('active');
+            }
+        });
+    </script>
 </body>
 </html>
