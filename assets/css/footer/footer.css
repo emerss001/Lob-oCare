@@ -74,21 +74,23 @@ footer {
 @media (max-width: 724px) {
     footer {
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         padding-top: 40px;
         box-sizing: border-box;
+        gap: 3vh;
     }
 
     .left-footer {
-        position: absolute;
-        bottom: 0;
         margin-left: 0;
-        margin-bottom: 4vh;
+        margin-bottom: 3vh;
+        order: 2;
     }
 
     .right-footer {
         margin-right: 0;
         margin-bottom: 0px;
+        order: 1;
     }
 }
