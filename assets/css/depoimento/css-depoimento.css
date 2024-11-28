@@ -1,0 +1,36 @@
+h1 {
+    font-size: 3rem;
+    padding: 2% 25% 5% 25%;
+    text-align: center;
+    margin: 0;
+}
+
+.depoimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    max-width: 250px;
+    border: 2px solid #ddd;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+}
+.depoimento img {
+    width: 200px;
+}
+
+main > div {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    gap: 3rem; 
+    margin: 0; 
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.depoimento p, .depoimento h2 {
+    margin: 0; 
+}
