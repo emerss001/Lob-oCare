@@ -7,41 +7,44 @@
     <link rel="stylesheet" href="../assets/css/agendamento/agendamento.css">
 </head>
 <body>
+
+    <div class="container_geral">
     <header></header>
 
     <main>
 
-    <div class="container_geral">
-
     <h1 class="center">Preencha o formulário para agendar a consulta</h1>
 
     <form action="#" method="post">
+        <div class="campos">
         <label for="nomeResponsavel">Nome do Responsável: *</label><br>
-        <input type="text" id="nomeResponsavel" name="nomeResponsavel" required><br><br>
+        <input type="text" id="nomeResponsavel" name="nomeResponsavel" placeholder="Jhon Caster" required><br><br>
 
         <label for="telefone">Telefone de Contato: *</label><br>
-        <input type="text" id="telefone" name="telefone" required><br><br>
+        <input type="text" id="telefone" name="telefone" placeholder="77 9 9999-9999" required><br><br>
 
-        <label for="email">E-mail: *</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+        <label for="email">E-mail: </label><br>
+        <input type="email" id="email" name="email" placeholder="jhon.caster@gmail.com"><br><br>
 
         <label for="nomePet">Nome do Pet: *</label><br>
-        <input type="text" id="nomePet" name="nomePet" required><br><br>
+        <input type="text" id="nomePet" name="nomePet" placeholder="Rex" required><br><br>
 
         <label for="especiePet">Espécie do Pet: *</label><br>
         <input type="text" id="especiePet" name="especiePet" placeholder="Cachorro, Gato, Outro..." required><br><br>
+    </div>
 
-        <label for="horario">Escolha o Horário: *</label><br>
-        <select id="horario" name="horario" required>
-            <option value="8:30">8:30</option>
-            <option value="9:30">9:30</option>
-            <option value="10:30">10:30</option>
-            <option value="11:30">11:30</option>
-            <option value="14:30">14:30</option>
-            <option value="15:30">15:30</option>
-            <option value="16:30">16:30</option>
-        </select><br><br>
+    <div class="horarios-container">
+        <label for="horario">Escolha o Horário: *</label>
+          <button class="horario-botao" value="8:30">8:30</button>
+          <button class="horario-botao" value="9:30">9:30</button>
+          <button class="horario-botao" value="10:30">10:30</button>
+          <button class="horario-botao" value="11:30">11:30</button>
+          <button class="horario-botao" value="14:30">14:30</button>
+          <button class="horario-botao" value="15:30">15:30</button>
+          <button class="horario-botao" value="16:30">16:30</button>
+        </div>
 
+        <div class="servicos-container">
         <label for="servico">Escolha o Serviço: *</label><br>
         <select id="servico" name="servico" required>
             <option value="" disabled selected>Selecione o serviço desejado</option>
@@ -50,15 +53,17 @@
             <option value="adestramento">Adestramento</option>
             <option value="farmacia">Farmácia e higiene</option>
         </select><br><br>
+        </div>
 
         <label for="data">Data: *</label><br>
-        <input type="date" id="data" name="data" required><br><br>
+        <input type="date" id="data" name="data" placeholder="12/07/2024" required><br><br>
 
         <button type="submit">Agendar</button>
 
     </form>
-    </div>
 
     </main>
+
+    </div>
 </body>
 </html>
