@@ -1,36 +1,67 @@
-h1 {
-    font-size: 3rem;
-    padding: 2% 25% 5% 25%;
-    text-align: center;
+body {
+    background-color: #f5f7fa;
     margin: 0;
-}
-
-.depoimento {
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    padding: 2rem;
+}
+
+main {
+    max-width: 1200px;
     width: 100%;
-    max-width: 250px;
-    border: 2px solid #ddd;
-    box-sizing: border-box;
-    margin-bottom: 2rem;
-}
-.depoimento img {
-    width: 200px;
+    padding: 20px;
+    text-align: center;
 }
 
-main > div {
-    display: grid;
-    grid-template-columns: repeat(3, 250px);
-    gap: 3rem; 
-    margin: 0; 
-    padding: 0;
+h1 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.depoimentos {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    gap: 20px;
 }
 
-.depoimento p, .depoimento h2 {
-    margin: 0; 
+.depoimento {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    width: 100%;
+    text-align: left;
+}
+
+.depoimento img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.depoimento p {
+    font-size: 1em;
+    color: #555;
+    margin: 15px 0;
+}
+
+.depoimento .autor {
+    font-weight: 700;
+    color: #333;
+}
+
+.depoimento .data {
+    font-size: 0.9em;
+    color: #999;
+}
+
+@media (max-width: 768px) {
+    .depoimentos {
+        flex-direction: column;
+        align-items: center;
+    }
 }
