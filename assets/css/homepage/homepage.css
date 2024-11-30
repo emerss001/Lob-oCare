@@ -8,3 +8,208 @@ body {
     padding: 0;
     font-family: "DMSans", sans-serif;
 }
+
+.main-info {
+    margin: 5vw 10vw 0 10vw;
+}
+
+.top-main-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-info-texts {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome {
+    text-transform: uppercase;
+    font-size: clamp (25px, 2vw, 30px);
+    margin-bottom: 0;
+}
+
+.assist {
+    color: #212529;
+    font-size: clamp(45px, 2vw, 50px);
+    width: 40vw;
+    max-width: 625px;
+}
+
+.main-desc {
+    color: #495057;
+    font-weight: bold;
+    font-size: clamp(11px, 2vw, 16px);
+    width: 550px;
+}
+.main-dog {
+    width: 367px;
+    margin-right: 2vw;
+}
+
+.main-data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #D2E0C7;
+    border-radius: 15px;
+    height: 179px;
+    padding: 0 2vw;
+    gap: 5vw;
+    margin-bottom: 100px;
+}
+
+.attend-pets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spec-available {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.market-years {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-amount {
+    color: #212529;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.main-data-desc {
+    color: #00856F;
+    font-size: 20px;
+    text-align: center;
+}
+
+.services-button {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: #84AE61;
+    border-radius: 15px;
+    padding: 30px 3px;
+    color: white;
+    width: 372px;
+    margin-bottom: 100px;
+}
+
+.services-button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+@media (min-width: 1920px) and (max-width: 2700px){
+    .main-info {
+        margin: 5vw 12vw 0 12vw;
+    }
+}
+
+@media (min-width: 2701px){
+    .main-info{
+        margin: 5vw 20vw 0 20vw;
+    }
+}
+
+@media (max-width: 1050px){
+
+    .top-main-info {
+        display: flex;
+        justify-content: flex-start;
+        height: 35vw;
+    }
+
+    .main-desc {
+        width: 40vw;
+    }
+}
+
+@media (max-width: 800px){
+    .top-main-info {
+        display: flex;
+        justify-content: flex-start;
+        height: 35vw;
+    }
+
+    .main-info-texts {
+        gap: 0;
+    }
+
+    .assist {
+        font-size: 4vw;
+    }
+
+    .main-desc {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 414px){
+    .main-info {
+        display: flex;
+        flex-direction: column;
+    }
+    .top-main-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-info-texts{
+        align-items: center;
+        width: 100%;
+    }
+
+    .assist {
+        text-align: center;
+        width: 100%;
+    }
+
+    .main-desc {
+        display: flex;
+        width: 300px;
+        text-align: center;
+    }
+
+    .main-data {
+        display: flex;
+        height: 100px;
+        padding-left: 20px;
+        margin-top: 120px;
+    }
+
+    .main-dog {
+        margin: auto;
+        width: 100px;
+    }
+
+    .main-amount {
+        font-size: 5vw;
+    }
+
+    .main-data-desc {
+        text-align: center;
+        font-size: 3vw;
+    }
+
+    .services-button {
+        width: 180px;
+        margin-top: -60px;
+    }
+
+    .services-button a {
+        font-size: 14px;
+    }
+
+}
