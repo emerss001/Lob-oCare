@@ -1,17 +1,23 @@
+@font-face {
+    font-family: "DMSans";
+    src: url(/assets/fonts/DMSans.ttf);
+}
+
 body {
+    font-family: "DMSans";
     background-color: #f5f7fa;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-main {
+.container {
     max-width: 1200px;
     width: 100%;
     padding: 20px;
-    text-align: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 h1 {
@@ -20,14 +26,13 @@ h1 {
     color: #333;
     margin-bottom: 40px;
 }
-
 .depoimentos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    align-items: center;
 }
-
 .depoimento {
     background-color: #fff;
     border-radius: 10px;
@@ -37,28 +42,23 @@ h1 {
     width: 100%;
     text-align: left;
 }
-
 .depoimento img {
     width: 100%;
     border-radius: 10px;
 }
-
 .depoimento p {
     font-size: 1em;
     color: #555;
     margin: 15px 0;
 }
-
 .depoimento .autor {
     font-weight: 700;
     color: #333;
 }
-
 .depoimento .data {
     font-size: 0.9em;
     color: #999;
 }
-
 @media (max-width: 768px) {
     .depoimentos {
         flex-direction: column;
