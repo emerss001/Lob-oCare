@@ -23,19 +23,23 @@ body{
     background-color: white;
     border-radius: 8px;
     border: solid 1px #dce9e2;
-    width: 347px;
-    height: 207px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    min-height: 12rem;
     margin: 20px;
+    width: 300rem;
+    width: 100%;
+    text-align: left;
 }
 
 .main-tittle{
-    font-size: 23px;
+    font-size: 15pt;
     padding-left: 25%;
     padding-top: 2%;
     padding-bottom: 5%;
     padding-right: 25%;
     text-align: center;
+    color: #333;
 }
 
 .painel-cards{
@@ -57,4 +61,21 @@ h2{
 p{
     font-size: 16px;
     font-weight:normal;
+}
+
+@media (max-width: 1150px) {
+    .painel-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-tittle{
+        font-size: 12pt;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-tittle{
+        font-size: 8pt;
+    }
 }
