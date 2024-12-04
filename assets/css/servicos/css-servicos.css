@@ -79,3 +79,18 @@ p{
         font-size: 8pt;
     }
 }
+@media (min-height: 1000px ) and (max-width: 1150px) {
+    .painel-cards{
+        height: 29vh;
+    }
+}
+
+@media (min-height: 1200px ){
+    .painel-cards{
+        height: 30vh;
+    }
+
+    .services-cards{
+        height: 20rem;
+    }
+}
