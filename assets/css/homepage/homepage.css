@@ -123,6 +123,10 @@ div.main-data {
     margin: 4rem auto;
 }
 
+.main-info .services-button:hover {
+    border: 0.3rem solid #D2E0C7;
+}
+
 .services-button a {
     color: white;
     text-decoration: none;
@@ -259,12 +263,18 @@ div.paw-btn {
     gap: clamp(0.6rem, 0.667vw, 0.8rem);
 }
 
+.paw-btn:hover {
+    border: 0.3rem solid #D2E0C7;
+}
+
 .paw-btn .paw-icon {
     content: url(../../icons/index/paw-icon.png);
     width: clamp(1.3rem, 1.25vw, 1.5rem);
 }
 
 .paw-btn .paw-btn-text {
+    color: white;
+    text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
     font-size: clamp(0.7rem, 0.729vw, 0.875rem);
