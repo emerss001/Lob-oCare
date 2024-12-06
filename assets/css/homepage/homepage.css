@@ -1,6 +1,6 @@
 @font-face {
     font-family: "DMSans";
-    src: url('LobaoCare/fonts/DMSans.ttf');
+    src: url('../../fonts/DMSans.ttf');
 }
 
 * {
@@ -89,9 +89,10 @@ div.main-data {
     gap: clamp(2rem, 3.75vw, 4.5rem);
 }
 
-div.main-data div {
+.main-data .main-data-itens {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .main-data .main-amount {
@@ -131,8 +132,8 @@ div.main-data div {
 
 /*styling section localization*/
 
-.attend-pets {
-    display: flex;
+section.localization {
+    margin-bottom: clamp(4rem, 6vw, 24rem);
 }
 
 div.localization-contents {
@@ -144,11 +145,51 @@ div.localization-contents {
 
 
 .localization-contents iframe {
+    display: flex;
+    justify-content: center;
+    width: clamp(40rem, 47.344vw, 56.813rem);
     margin-top: 1.5rem;
-    margin-bottom: 4rem;
-    width: clamp(48rem, 47.344vw, 56.813rem);
     height: 38.412rem;
 }
+
+
+/* styling section trajectory */
+
+section.trajectory {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+div.traj-contents {
+    display: flex;
+    gap: clamp(1rem, 5vw, 6rem);
+}
+
+.vet-image {
+    width: clamp(12rem, 31.563vw, 37.875rem);
+    height: clamp(14.62rem, 38.438vw, 46.125rem);
+}
+
+div.traj-texts {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.3rem, 0.667vw, 0.8rem);
+    width: clamp(15rem, 25.261vw, 30.313rem);
+}
+
+div.traj-texts p {
+    font-size: clamp(0.9rem, 1.25vw, 1.5rem);
+}
+
+.traj-texts .title {
+    line-height: clamp(1.2, 4vw, 1.4);
+    font-size: clamp(2rem, 2.083vw, 2.5rem);
+    width: clamp(20rem, 24.011vw, 28.813rem);
+    margin-bottom: clamp(0.9rem, 0.833vw, 1rem);
+}
+
+/* end */
 
 
 @media (max-width: 650px) {
@@ -221,6 +262,30 @@ div.localization-contents {
         width: 95%;
     }
 
+    /* styling section trajectory */
+
+
+    div.traj-contents {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: clamp(1rem, 5vw, 6rem);
+    }
+
+    div.traj-texts {
+        align-items: center;
+        width: 100%;
+    }
+
+    div.traj-texts p {
+        font-size: clamp(0.9rem, 1.25vw, 1.5rem);
+        width: 80%;
+    }
+
+    .traj-texts .title {
+        width: 100%;
+        text-align: center;
+        font-size: 1.6rem;
+    }
 
 
 }
