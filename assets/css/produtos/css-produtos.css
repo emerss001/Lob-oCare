@@ -223,6 +223,14 @@ main {
     transition: background-color 0.3s;
 }
 
+.erro {
+    text-align: center;
+}
+
+.erro p {
+    margin: 0;
+}
+
 @media screen and (min-width: 320px) and (max-width: 715px) {
     .titulo-categoria {
         font-size: 2rem;

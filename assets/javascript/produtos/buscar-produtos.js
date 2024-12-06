@@ -3,11 +3,18 @@ const url = "https://lobao-care-backend.onrender.com/products";
 async function buscarProdutos() {
     try {
         const response = await fetch(url);
-        const data = await response.json();
+        if (!response.ok) throw new Error("Erro ao buscar produtos da API");
 
-        renderizarProdutos(data);
+        const produtos = await response.json();
+        renderizarProdutos(produtos);
     } catch (error) {
-        console.error(error);
+        const controllerErro = document.querySelector("#controller");
+        controllerErro.innerHTML = `
+            <div class="erro">
+                <h1>Não foi possível carregar os produtos 😬</h1>
+                <p>Tente novamente mais tarde.</p>
+            </div>
+        `;
     }
 }
 
