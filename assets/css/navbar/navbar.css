@@ -164,6 +164,11 @@ header {
         padding-right: 20vw;
     }
 
+    #schedule-button:hover {
+        color: transparent;
+        background-color: #84ae61;
+    }
+
     #schedule-button::after {
         content: "Agendar";
         color: white;

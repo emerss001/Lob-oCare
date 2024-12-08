@@ -1,6 +1,6 @@
 @font-face {
     font-family: "DMSans";
-    src: url("/assets/fonts/DMSans.ttf");
+    src: url('../../fonts/DMSans.ttf');
 }
 
 * {
@@ -40,7 +40,11 @@ div.main-info-contents {
 
 div.top-main-info {
     display: flex;
+<<<<<<< HEAD
     gap: clamp(3rem, 4vw, 9rem);
+=======
+    gap: clamp(8rem, 4vw, 9rem);
+>>>>>>> refs/remotes/origin/main
 }
 
 div.main-info-texts {
@@ -89,6 +93,7 @@ div.main-data {
     gap: clamp(2rem, 3.75vw, 4.5rem);
 }
 
+<<<<<<< HEAD
 div.main-data div {
     display: flex;
     flex-direction: column;
@@ -105,6 +110,25 @@ div.main-data div {
     color: #00856F;
 }
 
+=======
+.main-data .main-data-itens {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main-data .main-amount {
+    text-align: center;
+    font-size: clamp(1rem, 3.125vw, 3.75rem);
+    font-weight: bold;
+}
+
+.main-data .main-data-desc {
+    font-size: clamp(0.9rem, 1.042vw, 1.25rem);
+    color: #00856F;
+}
+
+>>>>>>> refs/remotes/origin/main
 .main-data .division {
     background-color: #00856F;
     height: 5.188rem;
@@ -120,6 +144,13 @@ div.main-data div {
     background-color: #84AE61;
     border-radius: 0.938rem;
     margin: 4rem auto;
+<<<<<<< HEAD
+=======
+}
+
+.main-info .services-button:hover {
+    border: 0.3rem solid #D2E0C7;
+>>>>>>> refs/remotes/origin/main
 }
 
 .services-button a {
@@ -131,8 +162,13 @@ div.main-data div {
 
 /*styling section localization*/
 
+<<<<<<< HEAD
 .attend-pets {
     display: flex;
+=======
+section.localization {
+    margin-bottom: clamp(4rem, 6vw, 24rem);
+>>>>>>> refs/remotes/origin/main
 }
 
 div.localization-contents {
@@ -144,13 +180,162 @@ div.localization-contents {
 
 
 .localization-contents iframe {
+<<<<<<< HEAD
     margin-top: 1.5rem;
     margin-bottom: 4rem;
     width: clamp(48rem, 47.344vw, 56.813rem);
+=======
+    display: flex;
+    justify-content: center;
+    width: clamp(40rem, 47.344vw, 56.813rem);
+    margin-top: 1.5rem;
+>>>>>>> refs/remotes/origin/main
     height: 38.412rem;
 }
 
 
+<<<<<<< HEAD
+=======
+/* styling section trajectory */
+
+section.trajectory {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+div.traj-contents {
+    display: flex;
+    gap: clamp(1rem, 5vw, 6rem);
+}
+
+.traj-contents .vet-image {
+    width: clamp(12rem, 31.563vw, 37.875rem);
+    height: clamp(14.62rem, 38.438vw, 46.125rem);
+}
+
+div.traj-texts {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.3rem, 0.667vw, 0.8rem);
+    width: clamp(15rem, 25.261vw, 30.313rem);
+}
+
+div.traj-texts p {
+    font-size: clamp(0.9rem, 1.25vw, 1.5rem);
+}
+
+.traj-texts .title {
+    line-height: clamp(1.2, 4vw, 1.4);
+    font-size: clamp(2rem, 2.083vw, 2.5rem);
+    width: clamp(20rem, 24.011vw, 28.813rem);
+    margin-bottom: clamp(0.9rem, 0.833vw, 1rem);
+}
+
+/* styling section contact */
+
+section.contact {
+    display: flex;
+    justify-content: center;
+    margin-bottom: clamp(1rem, 3.333vw, 4rem);
+}
+
+div.ctt-contents {
+    display: flex;
+    justify-content: space-between;
+    gap: clamp(2rem, 6vw, 7.2rem);
+}
+
+div.ctt-contents .left-ctt {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.4rem, 1.667vw, 2rem);
+}
+
+.left-ctt .title {
+    width: clamp(17rem, 21.042vw, 25.25rem);
+}
+
+.left-ctt .ctt-info {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.3rem, 0.833vw, 1rem);
+    font-size: clamp(0.9rem, 1.25vw, 1.5rem);
+}
+
+.ctt-info .ctt-info-row {
+    display: flex;
+    color: #495057;
+    gap: clamp(0.6rem, 0.75vw, 0.9rem);
+    align-items: center;
+}
+
+.ctt-info-row .local-icon {
+    content: url(../../icons/index/map-pin.png);
+}
+
+.ctt-info-row .email-icon {
+    content: url(../../icons/index/mail.png);
+}
+
+.ctt-info-row .ig-icon {
+    content: url(../../icons/index/ig.svg);
+}
+
+.ctt-info-row .ctt-icon {
+    width: clamp(1rem, 1.198vw, 1.438rem);
+}
+
+.left-ctt .paw-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #84AE61;
+    color: white;
+    width: clamp(14rem, 13.907vw, 16.688rem);
+    height: clamp(3.7rem, 2.917vw, 3.5rem);
+    border-radius: 2.5rem;
+}
+
+div.paw-btn {
+    display: flex;
+    gap: clamp(0.6rem, 0.667vw, 0.8rem);
+}
+
+.paw-btn:hover {
+    border: 0.3rem solid #D2E0C7;
+}
+
+.paw-btn .paw-icon {
+    content: url(../../icons/index/paw-icon.png);
+    width: clamp(1.3rem, 1.25vw, 1.5rem);
+}
+
+.paw-btn .paw-btn-text {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: clamp(0.7rem, 0.729vw, 0.875rem);
+}
+
+
+.right-ctt .vet-image {
+    width: clamp(15rem, 35.053vw, 42.063rem);
+}
+
+.vet-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* end */
+
+
+>>>>>>> refs/remotes/origin/main
 @media (max-width: 650px) {
 
     h1.title {
@@ -221,6 +406,70 @@ div.localization-contents {
         width: 95%;
     }
 
+<<<<<<< HEAD
+=======
+    /* styling section trajectory */
+
+
+    div.traj-contents {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: clamp(1rem, 5vw, 6rem);
+    }
+
+    div.traj-texts {
+        align-items: center;
+        width: 100%;
+    }
+
+    div.traj-texts p {
+        font-size: clamp(0.9rem, 1.25vw, 1.5rem);
+        width: 80%;
+    }
+
+    .traj-texts .title {
+        width: 100%;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    /* styling section contact */
+
+    div.ctt-contents {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .ctt-contents .left-ctt {
+        align-items: center;
+        width: 100%;
+    }
+
+    .left-ctt .title{
+        margin-bottom: 1rem;
+        width: 85%;
+    }
+
+    .left-ctt .ctt-info {
+        gap: 0.8rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .left-ctt .title {
+        text-align: center;
+    }
+
+    .right-ctt .vet-image {
+        display: none;
+    }
+
+    .left-ctt .vet-image-mobile {
+        content: url(../../icons/index/contact.png);
+        width: clamp(15rem, 35.053vw, 42.063rem);
+        margin-top: 0.2rem;
+        margin-bottom: 1rem;
+    }
+>>>>>>> refs/remotes/origin/main
 
 
 }

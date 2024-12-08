@@ -11,8 +11,8 @@ body {
 
 .container-geral{
     width: 100%;
-    max-width: 500px;
-    margin: 50px auto;
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
@@ -22,9 +22,21 @@ body {
 
 .campos {
     width: 100%;
-    max-width: 400px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+}
+
+.campo-grupo1{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.campo-grupo2{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .campos label {
@@ -33,7 +45,6 @@ body {
 }
 
 .campos input {
-    width: 100%;
     padding: 10px;
     font-size: 14px;
     border: 1px solid #ccc;
@@ -42,17 +53,38 @@ body {
     margin-bottom: 15px;
 }
 
+.campo-responsavel input{
+    width: 600px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.campo-grupo1 input{
+    width: 300px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.campo-grupo2 input{
+    width: 300px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
 .campos input:focus {
     border-color: #007BFF;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
+
 .horarios-container {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     width: 100%;
-    max-width: 500px;
+    max-width: 800px;
     margin: 50px auto;
+    display: flex;
+    flex-direction: row;
 }
 
 .horario-botao {
@@ -63,4 +95,104 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+label {
+    display: block;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.servicos{
+    max-width: 300px;
+    margin: auto;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+}
+
+.dropdown-button:after {
+    content: "▼";
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.dropdown-menu {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.datas{
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.datas input{
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+.datas input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.agendar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #80C565;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
