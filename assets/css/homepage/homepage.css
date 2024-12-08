@@ -1,13 +1,13 @@
 @font-face {
     font-family: "DMSans";
-    src: url('../../fonts/DMSans.ttf');
+    src: url("../../fonts/DMSans.ttf");
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'DMSans';
+    font-family: "DMSans";
 }
 
 /* styling section main-info */
@@ -27,7 +27,7 @@ h1.title {
     text-decoration: none;
     font-size: 0.875rem;
     text-transform: uppercase;
-    color: #00856F;
+    color: #00856f;
 }
 
 div.main-info-contents {
@@ -40,11 +40,7 @@ div.main-info-contents {
 
 div.top-main-info {
     display: flex;
-<<<<<<< HEAD
-    gap: clamp(3rem, 4vw, 9rem);
-=======
     gap: clamp(8rem, 4vw, 9rem);
->>>>>>> refs/remotes/origin/main
 }
 
 div.main-info-texts {
@@ -83,7 +79,7 @@ div.main-dog {
 
 div.main-data {
     display: flex;
-    background-color: #D2E0C7;
+    background-color: #d2e0c7;
     justify-content: center;
     align-items: center;
     justify-self: center;
@@ -93,24 +89,6 @@ div.main-data {
     gap: clamp(2rem, 3.75vw, 4.5rem);
 }
 
-<<<<<<< HEAD
-div.main-data div {
-    display: flex;
-    flex-direction: column;
-}
-
-.main-data .main-amount {
-    text-align: center;
-    font-size: clamp(1rem, 3.125vw, 3.75rem);
-    font-weight: bold;
-}
-
-.main-data .main-data-desc {
-    font-size: clamp(0.9rem, 1.042vw, 1.25rem);
-    color: #00856F;
-}
-
-=======
 .main-data .main-data-itens {
     display: flex;
     flex-direction: column;
@@ -125,12 +103,11 @@ div.main-data div {
 
 .main-data .main-data-desc {
     font-size: clamp(0.9rem, 1.042vw, 1.25rem);
-    color: #00856F;
+    color: #00856f;
 }
 
->>>>>>> refs/remotes/origin/main
 .main-data .division {
-    background-color: #00856F;
+    background-color: #00856f;
     height: 5.188rem;
     width: 1px;
 }
@@ -141,16 +118,13 @@ div.main-data div {
     align-items: center;
     width: 23.25rem;
     height: 5.875rem;
-    background-color: #84AE61;
+    background-color: #84ae61;
     border-radius: 0.938rem;
     margin: 4rem auto;
-<<<<<<< HEAD
-=======
 }
 
 .main-info .services-button:hover {
-    border: 0.3rem solid #D2E0C7;
->>>>>>> refs/remotes/origin/main
+    border: 0.3rem solid #d2e0c7;
 }
 
 .services-button a {
@@ -162,13 +136,8 @@ div.main-data div {
 
 /*styling section localization*/
 
-<<<<<<< HEAD
-.attend-pets {
-    display: flex;
-=======
 section.localization {
     margin-bottom: clamp(4rem, 6vw, 24rem);
->>>>>>> refs/remotes/origin/main
 }
 
 div.localization-contents {
@@ -178,24 +147,14 @@ div.localization-contents {
     gap: 1rem;
 }
 
-
 .localization-contents iframe {
-<<<<<<< HEAD
-    margin-top: 1.5rem;
-    margin-bottom: 4rem;
-    width: clamp(48rem, 47.344vw, 56.813rem);
-=======
     display: flex;
     justify-content: center;
     width: clamp(40rem, 47.344vw, 56.813rem);
     margin-top: 1.5rem;
->>>>>>> refs/remotes/origin/main
     height: 38.412rem;
 }
 
-
-<<<<<<< HEAD
-=======
 /* styling section trajectory */
 
 section.trajectory {
@@ -290,7 +249,7 @@ div.ctt-contents .left-ctt {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #84AE61;
+    background-color: #84ae61;
     color: white;
     width: clamp(14rem, 13.907vw, 16.688rem);
     height: clamp(3.7rem, 2.917vw, 3.5rem);
@@ -303,7 +262,7 @@ div.paw-btn {
 }
 
 .paw-btn:hover {
-    border: 0.3rem solid #D2E0C7;
+    border: 0.3rem solid #d2e0c7;
 }
 
 .paw-btn .paw-icon {
@@ -319,7 +278,6 @@ div.paw-btn {
     font-size: clamp(0.7rem, 0.729vw, 0.875rem);
 }
 
-
 .right-ctt .vet-image {
     width: clamp(15rem, 35.053vw, 42.063rem);
 }
@@ -330,18 +288,12 @@ div.paw-btn {
     height: 100%;
 }
 
-
-
 /* end */
 
-
->>>>>>> refs/remotes/origin/main
 @media (max-width: 650px) {
-
     h1.title {
         line-height: 1;
     }
-
 
     section.main-info {
         padding: 0;
@@ -380,7 +332,6 @@ div.paw-btn {
         gap: clamp(2rem, 1vw, 4rem);
     }
 
-
     .main-data .main-data-desc {
         max-width: 20vw;
     }
@@ -388,12 +339,12 @@ div.paw-btn {
     .main-data .division {
         display: none;
     }
-    
+
     .main-info .services-button {
         width: clamp(18rem, 19.375vw, 23.25rem);
         height: clamp(5rem, 4.896vw, 5.875rem);
     }
-    
+
     .services-button a {
         font-size: clamp(1.4rem, 1.563vw, 1.875rem);
     }
@@ -406,10 +357,7 @@ div.paw-btn {
         width: 95%;
     }
 
-<<<<<<< HEAD
-=======
     /* styling section trajectory */
-
 
     div.traj-contents {
         justify-content: center;
@@ -445,7 +393,7 @@ div.paw-btn {
         width: 100%;
     }
 
-    .left-ctt .title{
+    .left-ctt .title {
         margin-bottom: 1rem;
         width: 85%;
     }
@@ -469,7 +417,4 @@ div.paw-btn {
         margin-top: 0.2rem;
         margin-bottom: 1rem;
     }
->>>>>>> refs/remotes/origin/main
-
-
 }
