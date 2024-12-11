@@ -149,6 +149,10 @@ header {
         padding-right: 20vw;
     }
 
+    .right-links {
+        font-size: 14px;
+    }
+
     #schedule-button:hover {
         color: transparent;
         background-color: #84ae61;
