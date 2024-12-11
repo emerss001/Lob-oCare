@@ -1,142 +1,148 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/servicos/css-servicos.css">
-    <link rel="stylesheet" href="../assets/css/navbar/navbar.css" />
-    <link rel="stylesheet" href="../assets/css/footer/footer.css" />
-    <title>Lobão Care - Serviços</title>
-</head>
-<body>
-    <header>
-        <div class="left-navbar">
-            <a href="../index.html" class="main-logo">
-                <img src="../assets/icons/logo/lobo.png" class="logo" alt="Logo da LobãoCare" />
-                <img src="../assets/icons/logo/Logo.svg" class="lobin" alt="LobãoCare" />
-            </a>
-        </div>
-
-        <div class="right-navbar">
-            <ul class="right-navbar-items">
-                <li>
-                    <a href="../index.html" class="start-link">Início</a>
-                </li>
-
-                <li>
-                    <a href="produtos.html" class="products-link">Produtos</a>
-                </li>
-
-                <li>
-                    <a href="servicos.html" class="services-link">Serviços</a>
-                </li>
-
-                <li>
-                    <a href="depoimento.html" class="feedbacks-link">Depoimentos</a>
-                </li>
-
-                <li>
-                    <a href="agendamento.html" id="schedule-button">agendar consulta</a>
-                </li>
-            </ul>
-
-            <div class="hamburger" onclick="toggleMenu()">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/css/servicos/css-servicos.css">
+        <link rel="stylesheet" href="../assets/css/navbar/navbar.css" />
+        <link rel="stylesheet" href="../assets/css/footer/footer.css" />
+        <title>Lobão Care - Serviços</title>
+    </head>
+    <body>
+        <header>
+            <div class="left-navbar">
+                <a href="../index.html" class="main-logo">
+                    <img src="../assets/icons/logo/lobo.png" class="logo" alt="Logo da LobãoCare" />
+                    <img src="../assets/icons/logo/Logo.svg" class="lobin" alt="LobãoCare" />
+                </a>
             </div>
-        </div>
-        <script>
-            function toggleMenu() {
-                const menu = document.querySelector(".right-navbar-items");
-                menu.classList.toggle("active");
-            }
 
-            document.querySelectorAll(".right-navbar-items a").forEach((link) => {
-                if (link.href === window.location.href) {
-                    link.classList.add("active");
+            <div class="right-navbar">
+                <ul class="right-navbar-items">
+                    <li>
+                        <a href="../index.html" class="start-link">Início</a>
+                    </li>
+
+                    <li>
+                        <a href="produtos.html" class="products-link">Produtos</a>
+                    </li>
+
+                    <li>
+                        <a href="servicos.html" class="services-link">Serviços</a>
+                    </li>
+
+                    <li>
+                        <a href="depoimento.html" class="feedbacks-link">Depoimentos</a>
+                    </li>
+
+                    <li>
+                        <a href="agendamento.html" id="schedule-button">agendar consulta</a>
+                    </li>
+                </ul>
+
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <script>
+                function toggleMenu() {
+                    const menu = document.querySelector(".right-navbar-items");
+                    menu.classList.toggle("active");
                 }
-            });
-        </script>
-    </header>
-    <main>
 
-        <div class="main-tittle">
-            <h1>Como podemos ajudar seu pet a se sentir melhor?</h1>
-        </div>
+                document.querySelectorAll(".right-navbar-items a").forEach((link) => {
+                    if (link.href === window.location.href) {
+                        link.classList.add("active");
+                    }
+                });
+            </script>
+        </header>
+        <main>
 
-        <div class="painel-cards">
-            <div class="services-cards">
-                <img src="../assets/icons/servicos/cofirmation.svg" alt="cofirmation_icon">
-                <h2>Atendimento clínico</h2>
-                <p>Cuidados veterinários completos, consultas, vacinas e tratamentos especializados para a saúde do seu pet.</p>
-            </div>
-            <div class="services-cards">
-                <img src="../assets/icons/servicos/cofirmation.svg" alt="cofirmation_icon">
-                <h2>Serviços estéticos</h2>
-                <p>Banhos, tosa, hidratação, escovação de dentes, limpeza de ouvido, corte de unhas, entre outros.</p>
-            </div>
-            <div class="services-cards">
-                <img src="../assets/icons/servicos/cofirmation.svg" alt="cofirmation_icon">
-                <h2>Farmácia e higiene</h2>
-                <p>Produtos para a saúde e bem-estar dos animais, como rações medicamentosas, shampoos e condicionadores.</p>
-            </div>
-            <div class="services-cards">
-                <img src="../assets/icons/servicos/cofirmation.svg" alt="cofirmation_icon">
-                <h2>Adestramento</h2>
-                <p>Técnicas de treinamento para melhorar o comportamento e socialização dos pets, adaptado às suas necessidades.</p>
-            </div>
-            <div class="services-cards">
-                <img src="../assets/icons/servicos/cofirmation.svg" alt="cofirmation_icon">
-                <h2>Vendas</h2>
-                <p>Produtos alimentícios, artigos e acessórios para animais domésticos, medicamentos, inclusive vacinas.</p>
-            </div>
-            <div class="services-cards">
-                <img src="../assets/icons/servicos/cofirmation.svg" alt="cofirmation_icon">
-                <h2>Transporte Especializado</h2>
-                <p>Transporte seguro e confortável para levar seu pet a consultas e compromissos com comodidade.</p>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="left-footer">
-            <div class="footer-logo">
-                <span class="logo-lobao">Lobão</span>
-                <span class="logo-care">Care</span>
+            <div class="main-tittle">
+                <h1>Como podemos ajudar seu pet a se sentir melhor?</h1>
             </div>
 
-            <div class="copyright">
-                <span class="copy-date">
-                    ©2024 - LobãoCare.
-                </span>
+            <div class="painel-cards">
 
-                <br>
+                <div class="services-cards">
+                    <img src="../assets/icons/servicos/cofirmation.svg" alt="cofirmation_icon">
+                    <h2>Atendimento clínico</h2>
+                    <p>Cuidados veterinários completos, consultas, vacinas e tratamentos especializados para a saúde do seu pet.</p>
+                </div>
 
-                <span class="reserved">
-                    Todos os direitos reservados.
-                </span>
-            </div>
-        </div>
-        <div class="right-footer">
-            <div class="whatsapp-logo">
-                <a href="n/a">
-                    <img src="../assets/icons/footer/wpp.svg" class="wpp-icon" height="28px" alt="Logo do Whatsapp">
-                </a>
-            </div>
+                <div class="services-cards">
+                    <img src="../assets/icons/servicos/cofirmation.svg" alt="cofirmation_icon">
+                    <h2>Serviços estéticos</h2>
+                    <p>Banhos, tosa, hidratação, escovação de dentes, limpeza de ouvido, corte de unhas, entre outros.</p>
+                </div>
 
-            <div class="facebook-logo">
-                <a href="n/a">
-                    <img src="../assets/icons/footer/fb.svg" class="fb-icon" alt="Logo do Facebook">
-                </a>
-            </div>
+                <div class="services-cards">
+                    <img src="../assets/icons/servicos/cofirmation.svg" alt="cofirmation_icon">
+                    <h2>Farmácia e higiene</h2>
+                    <p>Produtos para a saúde e bem-estar dos animais, como rações medicamentosas, shampoos e condicionadores.</p>
+                </div>
 
-            <div class="youtube-logo">
-                <a href="n/a">
-                    <img src="../assets/icons/footer/yt.svg" class="yt-icon" alt="Logo do Youtube">
-                </a>
+                <div class="services-cards">
+                    <img src="../assets/icons/servicos/cofirmation.svg" alt="cofirmation_icon">
+                    <h2>Adestramento</h2>
+                    <p>Técnicas de treinamento para melhorar o comportamento e socialização dos pets, adaptado às suas necessidades.</p>
+                </div>
+
+                <div class="services-cards">
+                    <img src="../assets/icons/servicos/cofirmation.svg" alt="cofirmation_icon">
+                    <h2>Vendas</h2>
+                    <p>Produtos alimentícios, artigos e acessórios para animais domésticos, medicamentos, inclusive vacinas.</p>
+                </div>
+
+                <div class="services-cards">
+                    <img src="../assets/icons/servicos/cofirmation.svg" alt="cofirmation_icon">
+                    <h2>Transporte Especializado</h2>
+                    <p>Transporte seguro e confortável para levar seu pet a consultas e compromissos com comodidade.</p>
+                </div>
+                
             </div>
-        </div>
-    </footer>
-    
-</body>
+        </main>
+        <footer>
+            <div class="left-footer">
+                <div class="footer-logo">
+                    <span class="logo-lobao">Lobão</span>
+                    <span class="logo-care">Care</span>
+                </div>
+
+                <div class="copyright">
+                    <span class="copy-date">
+                        ©2024 - LobãoCare.
+                    </span>
+
+                    <br>
+
+                    <span class="reserved">
+                        Todos os direitos reservados.
+                    </span>
+                </div>
+            </div>
+            <div class="right-footer">
+                <div class="whatsapp-logo">
+                    <a href="n/a">
+                        <img src="../assets/icons/footer/wpp.svg" class="wpp-icon" height="28px" alt="Logo do Whatsapp">
+                    </a>
+                </div>
+
+                <div class="facebook-logo">
+                    <a href="n/a">
+                        <img src="../assets/icons/footer/fb.svg" class="fb-icon" alt="Logo do Facebook">
+                    </a>
+                </div>
+
+                <div class="youtube-logo">
+                    <a href="n/a">
+                        <img src="../assets/icons/footer/yt.svg" class="yt-icon" alt="Logo do Youtube">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
