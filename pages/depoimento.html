@@ -12,34 +12,35 @@
     <body>
         <header>
             <div class="left-navbar">
-                <a href="index.html" class="main-logo">
-                    <img src="../assets/icons/logo/lobo.png" class="logo" alt="Logo da LobãoCare" />
-                    <img src="../assets/icons/logo/Logo.svg" class="lobin" alt="LobãoCare" />
+                <a href="../index.html" class="main-logo">
+                    <img src="assets/icons/logo/lobo.png" class="logo" alt="Logo da LobãoCare" />
+                    <img src="assets/icons/logo/Logo.svg" class="lobin" alt="LobãoCare" />
                 </a>
             </div>
+
             <div class="right-navbar">
                 <ul class="right-navbar-items">
                     <li>
-                        <a href="../index.html" class="start-link">Início</a>
+                        <a href="index.html" class="start-link">Início</a>
                     </li>
-    
+
                     <li>
-                        <a href="produtos.html" class="products-link">Produtos</a>
+                        <a href="pages/produtos.html" class="products-link right-links">Produtos</a>
                     </li>
-    
+
                     <li>
-                        <a href="servicos.html" class="services-link">Serviços</a>
+                        <a href="pages/servicos.html" class="services-link right-links">Serviços</a>
                     </li>
-    
+
                     <li>
-                        <a href="depoimento.html" class="feedbacks-link">Depoimentos</a>
+                        <a href="pages/depoimento.html" class="feedbacks-link right-links">Depoimentos</a>
                     </li>
-    
+
                     <li>
-                        <a href="agendamento.html" id="schedule-button">agendar consulta</a>
+                        <a href="pages/agendamento.html" id="schedule-button">agendar consulta</a>
                     </li>
                 </ul>
-    
+
                 <div class="hamburger" onclick="toggleMenu()">
                     <div class="bar"></div>
                     <div class="bar"></div>
@@ -123,5 +124,17 @@
                 </div>
             </div>
         </footer>
+        <script>
+            function toggleMenu() {
+                const menu = document.querySelector(".right-navbar-items");
+                menu.classList.toggle("active");
+            }
+
+            document.querySelectorAll(".right-navbar-items a").forEach((link) => {
+                if (link.href === window.location.href) {
+                    link.classList.add("active");
+                }
+            });
+        </script>
     </body>
 </html>
