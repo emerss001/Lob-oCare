@@ -85,10 +85,10 @@ p{
     }
 }
 
-@media (width > 1500px) {
+@media (width > 1560px) {
     .services-cards{
-        width: 500px;
-        height: 250px;
+        width: 410px;
+        height: 220px;
         border-radius: 12px;
     }
 }
