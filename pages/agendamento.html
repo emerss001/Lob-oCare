@@ -3,178 +3,178 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../assets/css/agendamento/agendamento.css">
+        <link rel="stylesheet" href="../assets/css/agendamento/agendamento.css" />
         <link rel="stylesheet" href="../assets/css/navbar/navbar.css" />
         <link rel="stylesheet" href="../assets/css/footer/footer.css" />
         <title>LobãoCare</title>
     </head>
     <body>
-
-    <header>
-        <div class="left-navbar">
-            <a href="/index.html" class="main-logo">
-                <img src="/assets/icons/logo/lobo.png" class="logo" alt="Logo da LobãoCare" />
-                <img src="/assets/icons/logo/Logo.svg" class="lobin" alt="LobãoCare" />
-            </a>
-        </div>
-
-        <div class="right-navbar">
-            <ul class="right-navbar-items">
-                <li>
-                    <a href="index.html" class="start-link">Início</a>
-                </li>
-
-                <li>
-                    <a href="/pages/produtos.html" class="products-link right-links">Produtos</a>
-                </li>
-
-                <li>
-                    <a href="/pages/servicos.html" class="services-link right-links">Serviços</a>
-                </li>
-
-                <li>
-                    <a href="/pages/depoimento.html" class="feedbacks-link right-links">Depoimentos</a>
-                </li>
-
-                <li>
-                    <a href="/pages/agendamento.html" id="schedule-button">agendar consulta</a>
-                </li>
-            </ul>
-
-            <div class="hamburger" onclick="toggleMenu()">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <div class="title">
-            <h1>Preencha o formulário para agendar a consulta</h1>
-        </div>
-
-        <form id="agendar-form" method="post">
-            <div class="input-label">
-                <label for="name">Nome do Responsável<span>*</span></label>
-                <input type="text" id="name" placeholder="Dion Caster" />
-                <small></small>
-            </div>
-
-            <div class="input-group">
-                <div class="group">
-                    <div class="input-label">
-                        <label for="telefone">Telefone de Contato<span>*</span></label>
-                        <input type="tel" name="telefone" id="telefone" placeholder="77 9 9999-9999" />
-                        <small>texto de erro aqui</small>
-                    </div>
-                    <div class="input-label">
-                        <label for="pet">Nome do Pet<span>*</span></label>
-                        <input type="text" id="pet" placeholder="Rex" />
-                    </div>
-                </div>
-
-                <div class="group">
-                    <div class="input-label">
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" placeholder="dion.caster@gmail.com" />
-                        <small></small>
-                    </div>
-                    <div class="input-label">
-                        <label for="pet-especie">Espécie de Pet<span>*</span></label>
-                        <input type="text" id="pet-especie" placeholder="Cachorro, Gato, Outro..." />
-                        <small>texto de erro aqui</small>
-                    </div>
-                </div>
-            </div>
-            <div class="input-label">
-                <label for="horario">Escolha o Horário<span>*</span></label>
-                <div id="time-slots-container">
-                    <p>Por favor, selecione uma data e um serviço para ver os horários disponíveis.</p>
-                </div>
-            </div>
-
-            <div class="input-group">
-                <div class="group">
-                    <div class="input-label">
-                        <label for="servico">Escolha o Serviço<span>*</span></label>
-                        <select id="servico" onchange="fetchAvailableSlots()">
-                            <option value="" selected>Selecione o serviço desejado</option>
-                            <option value="Atendimento clínico">Atendimento clínico 🩺</option>
-                            <option value="Serviços estéticos">Serviços estéticos ✂️</option>
-                            <option value="Adestramento">Adestramento 🐕‍🦺</option>
-                            <option value="Farmácia e higiene">Farmácia e higiene 🧴</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="group">
-                    <div class="input-label">
-                        <label for="data">Escolha a Data<span>*</span></label>
-                        <input type="date" name="data" id="data" onchange="fetchAvailableSlots()" />
-                        <small></small>
-                    </div>
-                </div>
-            </div>
-
-            <button type="submit" class="button-agendar">Agendar</button>
-        </form>
-    </main>
-
-    <footer>
-        <div class="left-footer">
-            <div class="footer-logo">
-                <span class="logo-lobao">Lobão</span>
-                <span class="logo-care">Care</span>
-            </div>
-
-            <div class="copyright">
-                <span class="copy-date"> ©2024 - LobãoCare. </span>
-
-                <br />
-
-                <span class="reserved"> Todos os direitos reservados. </span>
-            </div>
-        </div>
-        <div class="right-footer">
-            <div class="whatsapp-logo">
-                <a href="n/a">
-                    <img
-                        src="../assets/icons/footer/wpp.svg"
-                        class="wpp-icon"
-                        height="28px"
-                        alt="Logo do WhatsApp"
-                    />
+        <header>
+            <div class="left-navbar">
+                <a href="/index.html" class="main-logo">
+                    <img src="/assets/icons/logo/lobo.png" class="logo" alt="Logo da LobãoCare" />
+                    <img src="/assets/icons/logo/Logo.svg" class="lobin" alt="LobãoCare" />
                 </a>
             </div>
 
-            <div class="facebook-logo">
-                <a href="n/a">
-                    <img src="../assets/icons/footer/fb.svg" class="fb-icon" alt="Logo do Facebook" />
-                </a>
+            <div class="right-navbar">
+                <ul class="right-navbar-items">
+                    <li>
+                        <a href="index.html" class="start-link">Início</a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/produtos.html" class="products-link right-links">Produtos</a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/servicos.html" class="services-link right-links">Serviços</a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/depoimento.html" class="feedbacks-link right-links">Depoimentos</a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/agendamento.html" id="schedule-button">agendar consulta</a>
+                    </li>
+                </ul>
+
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="title">
+                <h1>Preencha o formulário para agendar a consulta</h1>
             </div>
 
-            <div class="youtube-logo">
-                <a href="n/a">
-                    <img src="../assets/icons/footer/yt.svg" class="yt-icon" alt="Logo do Youtube" />
-                </a>
+            <form id="agendar-form" method="post">
+                <div class="input-label">
+                    <label for="name">Nome do Responsável<span>*</span></label>
+                    <input type="text" id="name" placeholder="Dion Caster" />
+                    <small></small>
+                </div>
+
+                <div class="input-group">
+                    <div class="group">
+                        <div class="input-label">
+                            <label for="telefone">Telefone de Contato<span>*</span></label>
+                            <input type="tel" name="telefone" id="telefone" placeholder="77 9 9999-9999" />
+                            <small>texto de erro aqui</small>
+                        </div>
+                        <div class="input-label">
+                            <label for="pet">Nome do Pet<span>*</span></label>
+                            <input type="text" id="pet" placeholder="Rex" />
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <div class="input-label">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" placeholder="dion.caster@gmail.com" />
+                            <small></small>
+                        </div>
+                        <div class="input-label">
+                            <label for="pet-especie">Espécie de Pet<span>*</span></label>
+                            <input type="text" id="pet-especie" placeholder="Cachorro, Gato, Outro..." />
+                            <small>texto de erro aqui</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-label">
+                    <label for="horario">Escolha o Horário<span>*</span></label>
+                    <div id="time-slots-container">
+                        <p>Por favor, selecione uma data e um serviço para ver os horários disponíveis.</p>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="group">
+                        <div class="input-label">
+                            <label for="servico">Escolha o Serviço<span>*</span></label>
+                            <select id="servico" onchange="fetchAvailableSlots()">
+                                <option value="" selected>Selecione o serviço desejado</option>
+                                <option value="Atendimento clínico">Atendimento clínico 🩺</option>
+                                <option value="Serviços estéticos">Serviços estéticos ✂️</option>
+                                <option value="Adestramento">Adestramento 🐕‍🦺</option>
+                                <option value="Farmácia e higiene">Farmácia e higiene 🧴</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <div class="input-label">
+                            <label for="data">Escolha a Data<span>*</span></label>
+                            <input type="date" name="data" id="data" onchange="fetchAvailableSlots()" />
+                            <small></small>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="button-agendar">Agendar</button>
+            </form>
+        </main>
+
+        <footer>
+            <div class="left-footer">
+                <div class="footer-logo">
+                    <span class="logo-lobao">Lobão</span>
+                    <span class="logo-care">Care</span>
+                </div>
+
+                <div class="copyright">
+                    <span class="copy-date"> ©2024 - LobãoCare. </span>
+
+                    <br />
+
+                    <span class="reserved"> Todos os direitos reservados. </span>
+                </div>
             </div>
-        </div>
-    </footer>
+            <div class="right-footer">
+                <div class="whatsapp-logo">
+                    <a href="n/a">
+                        <img
+                            src="../assets/icons/footer/wpp.svg"
+                            class="wpp-icon"
+                            height="28px"
+                            alt="Logo do WhatsApp"
+                        />
+                    </a>
+                </div>
 
-    <script>
-        function toggleMenu() {
-            const menu = document.querySelector(".right-navbar-items");
-            menu.classList.toggle("active");
-        }
+                <div class="facebook-logo">
+                    <a href="n/a">
+                        <img src="../assets/icons/footer/fb.svg" class="fb-icon" alt="Logo do Facebook" />
+                    </a>
+                </div>
 
-        document.querySelectorAll(".right-navbar-items a").forEach((link) => {
-            if (link.href === window.location.href) {
-                link.classList.add("active");
+                <div class="youtube-logo">
+                    <a href="n/a">
+                        <img src="../assets/icons/footer/yt.svg" class="yt-icon" alt="Logo do Youtube" />
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            function toggleMenu() {
+                const menu = document.querySelector(".right-navbar-items");
+                menu.classList.toggle("active");
             }
-        });
-    </script>
 
-    <script src="../assets/javascript/agendamentos/validacao.js"></script>
+            document.querySelectorAll(".right-navbar-items a").forEach((link) => {
+                if (link.href === window.location.href) {
+                    link.classList.add("active");
+                }
+            });
+        </script>
+
+        <script src="../assets/javascript/agendamentos/validacao.js"></script>
+        <script src="../assets/javascript/agendamentos/buscar-horarios.js"></script>
     </body>
 </html>

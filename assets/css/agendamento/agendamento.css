@@ -1,6 +1,6 @@
 @font-face {
     font-family: DMSans;
-    src: url(../../fonte/DMSans.ttf);
+    src: url(/assets/fonts/DMSans.ttf);
 }
 
 :root {
